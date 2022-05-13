@@ -1,0 +1,20 @@
+.cabecalho {
+  height: auto;
+  background: #154580;
+  padding: 2rem 3rem;
+  background: url(/assets/imgs/Banner.png);
+}
+
+.cabecalho .logo {
+  width: 46%;
+}
+
+.cabecalho img {
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+.cabecalho p {
+  font-size: 2rem;
+  color: #6BD1FF;
+}
