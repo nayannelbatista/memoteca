@@ -31,3 +31,9 @@
 .modelo3 {
   box-shadow: 8px 8px 0px #84EEC1;
 }
+
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
