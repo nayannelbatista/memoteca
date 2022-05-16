@@ -1,4 +1,10 @@
+import { CitacaoService } from '../../../servicos/citacao.service';
 import { Component, OnInit } from '@angular/core';
+import { Citacao } from '../citacao';
+import { Router } from '@angular/router';
+
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-criar-citacao',
@@ -7,9 +13,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarCitacaoComponent implements OnInit {
 
+  citacao: Citacao = {
+    conteudo: '',
+    autoria: '',
+    modelo: '',
+    data: new Date
+  }
+
+  constructor(
+    private citacaoService: CitacaoService,
+    private router: Router
+  ) { }
+
   constructor() { }
+
 
   ngOnInit(): void {
   }
 
+
+  criarCitacao(): void {
+    this.citacaoService.criarCitacao(this.citacao)
+    this.router.navigate(['/listaCitacao']);
+    this.limparCitacao();
+  }
+
+  limparCitacao(): void {
+    this.citacao = {
+      conteudo: '',
+      autoria: '',
+      modelo: '',
+      data: new Date
+    }
+  }
+
 }
+}
+
