@@ -1,5 +1,5 @@
 import { ListaCitacaoComponent } from './componentes/citacao/lista-citacao/lista-citacao.component';
-import { CadastrarCitacaoComponent } from './componentes/citacao/cadastrar-citacao/cadastrar-citacao.component';
+import { CriarCitacaoComponent } from './componentes/citacao/criar-citacao/criar-citacao.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'cadsatrarCitacao',
-    component: CadastrarCitacaoComponent
+    component: CriarCitacaoComponent
   }
 ];
 

@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class CitacaoService {
   listaCitacaoMocada = MOCK_LISTA_CITACAO;
 
-  cadastrarCitacao(citacao: Citacao) {
+  criarCitacao(citacao: Citacao) {
     this.listaCitacaoMocada.push(citacao);
     console.log(this.listaCitacaoMocada)
   }

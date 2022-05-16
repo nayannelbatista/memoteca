@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { ListaCitacaoComponent } from './componentes/citacao/lista-citacao/lista-citacao.component'
-import { CadastrarCitacaoComponent } from './componentes/citacao/cadastrar-citacao/cadastrar-citacao.component'
+import { CriarCitacaoComponent } from './componentes/citacao/criar-citacao/criar-citacao.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { CadastrarCitacaoComponent } from './componentes/citacao/cadastrar-citac
     CabecalhoComponent,
     RodapeComponent,
     ListaCitacaoComponent,
-    CadastrarCitacaoComponent
+    CriarCitacaoComponent
   ],
   imports: [
     BrowserModule,
