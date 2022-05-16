@@ -1,6 +1,6 @@
 <section class="container criar-citacoes ff-inter">
-  <header>
-    <h2>Adicione um pensamento novo:</h2>
+  <header class="header">
+    <h2>Adicione um<br> pensamento novo:</h2>
   </header>
   <form (ngSubmit)="criarCitacao()">
     <label for="citacao">Pensamento:</label>
@@ -25,12 +25,12 @@
     <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
       <div class="radio-modelo">
-        <label for="modelo1" class="modelo-teste" for="modelo1">
+        <label class="modelo-teste" for="modelo1">
           <input
             type="radio"
             name="modelo-teste"
             id="modelo1"
-            value="modelo1"
+            value="class1"
             [(ngModel)]="citacao.modelo"
           >
           <div class="custom-radio">
@@ -43,7 +43,7 @@
           <img src="/assets/imgs/aspasazul.png" alt="">
           <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
           </p>
-          <p class="autor">Lorem Ipsum</p>
+          <p class="autor"><b>Lorem Ipsum</b></p>
         </div>
       </div>
       <div class="radio-modelo">
@@ -52,7 +52,7 @@
             type="radio"
             name="modelo-teste"
             id="modelo2"
-            value="modelo2"
+            value="class2"
             [(ngModel)]="citacao.modelo"
           >
           <div class="custom-radio">
@@ -74,7 +74,7 @@
             type="radio"
             name="modelo-teste"
             id="modelo3"
-            value="modelo3"
+            value="class3"
             [(ngModel)]="citacao.modelo"
           >
           <div class="custom-radio">

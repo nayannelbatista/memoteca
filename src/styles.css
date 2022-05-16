@@ -8,10 +8,6 @@
 
 .ff-inter { font-family: 'Inter', sans-serif; }
 .ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
-.fs-900 { font-size: 5em;}
-.fs-800 { font-size: 4em;}
-.fs-700 { font-size: 3em;}
-.fs-600 { font-size: 2em;}
 
 h1 {
   position: absolute;
@@ -24,6 +20,11 @@ h2 {
   color: #154580;
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
+}
+
+.header {
+  margin: 1rem auto 2rem;
 }
 
 .container {
