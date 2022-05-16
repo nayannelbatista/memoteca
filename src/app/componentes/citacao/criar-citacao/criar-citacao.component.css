@@ -28,6 +28,14 @@
   margin: 0.5rem 0 2rem;
 }
 
+
+.criar-citacoes form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
 .container-radio {
   display: flex;
   gap: 2.5rem;
@@ -106,21 +114,4 @@ input[type='radio']:checked+.custom-radio {
 
 input[type='radio']:checked+.custom-radio span {
   background: #154580;
-}
-
-.button {
-  background: #154580;
-  color: #ffffff;
-  max-width: 270px;
-  width: 250px;
-  padding: 1rem;
-  margin: 0 auto;
-  border: 2px solid #154580;
-  border-radius: 10px;
-  transition: 0.5s ease;
-}
-
-button:hover {
-  border: 2px solid #84EEC1;
-  color: #84EEC1;
 }

@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { Citacao } from '../citacao';
 import { Router } from '@angular/router';
 
+import { Component, OnInit } from '@angular/core';
+
+
 @Component({
   selector: 'app-criar-citacao',
   templateUrl: './criar-citacao.component.html',
@@ -22,8 +25,12 @@ export class CriarCitacaoComponent implements OnInit {
     private router: Router
   ) { }
 
+  constructor() { }
+
+
   ngOnInit(): void {
   }
+
 
   criarCitacao(): void {
     this.citacaoService.criarCitacao(this.citacao)
@@ -41,5 +48,5 @@ export class CriarCitacaoComponent implements OnInit {
   }
 
 }
-
+}
 

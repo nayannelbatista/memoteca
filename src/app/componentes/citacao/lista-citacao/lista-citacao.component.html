@@ -1,9 +1,10 @@
+
 <section class="container">
   <header class="header">
     <h2 class="ff-inter">Meu mural</h2>
     <button (click)="criarCitacao()">Adicionar pensamento</button>
   </header>
-  <div class="modelo modelo1 ff-roboto-mono" *ngIf="listaCitacaoMocada?.length > 0; else semCitacoes">
+  <div class="citacao modelo1 ff-roboto-mono" *ngIf="listaCitacaoMocada?.length > 0; else semCitacoes">
     <img src="/assets/imgs/aspasazul.png" alt="">
     <div *ngFor="let citacao of listaCitacaoMocada">
       <div class="{{citacao.modelo}}">
@@ -16,5 +17,3 @@
 <ng-template #semCitacoes>
   <p>Ainda não há citações por aqui!</p>
 </ng-template>
-
-

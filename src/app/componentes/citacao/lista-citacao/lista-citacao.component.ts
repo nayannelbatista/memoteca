@@ -1,6 +1,8 @@
 import { CitacaoService } from './../../../servicos/citacao.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-lista-citacao',
@@ -8,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./lista-citacao.component.css']
 })
 export class ListaCitacaoComponent implements OnInit {
+
 
   listaCitacaoMocada: any = [];
 
@@ -22,5 +25,10 @@ export class ListaCitacaoComponent implements OnInit {
 
   criarCitacao(): void {
     this.router.navigate(['/criarCitacao']);
+  }
+
+  constructor() { }
+
+  ngOnInit(): void {
   }
 }
