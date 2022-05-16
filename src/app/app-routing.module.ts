@@ -12,7 +12,7 @@ const routes: Routes = [
     component: ListaCitacaoComponent
   },
   {
-    path: 'cadsatrarCitacao',
+    path: 'criarCitacao',
     component: CriarCitacaoComponent
   }
 ];

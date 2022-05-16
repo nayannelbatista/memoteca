@@ -2,19 +2,37 @@
   <header>
     <h2>Adicione um pensamento novo:</h2>
   </header>
-  <form>
-    <label for="autor">Autor(a) ou Fonte:</label>
-    <input type="text" name="autor" id="autor" class="input" placeholder="Insira o nome do(a) autor(a) ou fonte">
-    <label for="pensamento">Pensamento:</label>
-    <input type="textarea" name="pensamento" id="pensamento" class="input" placeholder="Digite seu pensamento">
+  <form (ngSubmit)="criarCitacao()">
+    <label for="citacao">Pensamento:</label>
+    <input
+      type="textarea"
+      name="citacao"
+      id="citacao"
+      class="input"
+      placeholder="Digite o pensamento"
+      [(ngModel)]="citacao.conteudo"
+    >
+    <label for="autoria">Autoria ou fonte:</label>
+    <input
+      type="text"
+      name="autoria"
+      id="autoria"
+      class="input"
+      placeholder="Insira a autoria ou fonte"
+      [(ngModel)]="citacao.autoria"
+    >
 
     <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
-
-
       <div class="radio-modelo">
-        <label class="modelo-teste" for="modelo-teste">
-          <input type="radio" name="modelo-teste" id="modelo-teste">
+        <label for="modelo1" class="modelo-teste" for="modelo1">
+          <input
+            type="radio"
+            name="modelo-teste"
+            id="modelo1"
+            value="modelo1"
+            [(ngModel)]="citacao.modelo"
+          >
           <div class="custom-radio">
             <span></span>
           </div>
@@ -29,8 +47,14 @@
         </div>
       </div>
       <div class="radio-modelo">
-        <label class="modelo-teste" for="modelo-teste">
-          <input type="radio" name="modelo-teste" id="modelo-teste">
+        <label class="modelo-teste" for="modelo2">
+          <input
+            type="radio"
+            name="modelo-teste"
+            id="modelo2"
+            value="modelo2"
+            [(ngModel)]="citacao.modelo"
+          >
           <div class="custom-radio">
             <span></span>
           </div>
@@ -45,12 +69,18 @@
         </div>
       </div>
       <div class="radio-modelo">
-        <label class="modelo-teste" for="modelo-teste">
-          <input type="radio" name="modelo-teste" id="modelo-teste">
+        <label class="modelo-teste" for="modelo3">
+          <input
+            type="radio"
+            name="modelo-teste"
+            id="modelo3"
+            value="modelo3"
+            [(ngModel)]="citacao.modelo"
+          >
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 2</span>
+          <span>Modelo 3</span>
         </label>
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
@@ -66,21 +96,3 @@
   </form>
 </section>
 
-<!-- <form>
-  <label for="citacao">Citação</label>
-  <input id="citacao" type="text" name="citacao" [(ngModel)]="citacao.conteudo">
-  <label for="autoria">Autoria</label>
-  <input id="autoria" type="text" name="autoria" [(ngModel)]="citacao.autoria">
-
-  <p>Selecione o modelo do card</p>
-
-  <label for="modelo1">Modelo 1</label>
-  <input id="modelo1" type="radio" name="modeloCard" value="modelo1" [(ngModel)]="citacao.modelo">
-  <label for="modelo2">Modelo 2</label>
-  <input id="modelo2" type="radio" name="modeloCard" value="modelo2" [(ngModel)]="citacao.modelo">
-  <label for="modelo3">Modelo 3</label>
-  <input id="modelo3" type="radio" name="modeloCard" value="modelo3" [(ngModel)]="citacao.modelo">
-
-  <button type="submit" (click)="criarCitacao()">Adicionar citação</button>
-
-</form> -->
