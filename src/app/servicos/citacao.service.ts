@@ -10,7 +10,6 @@ export class CitacaoService {
 
   criarCitacao(citacao: Citacao) {
     this.listaCitacaoMocada.push(citacao);
-    console.log(this.listaCitacaoMocada)
   }
 
   mostrarListaCitacao() {

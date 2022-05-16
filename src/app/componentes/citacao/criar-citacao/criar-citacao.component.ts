@@ -26,7 +26,6 @@ export class CriarCitacaoComponent implements OnInit {
   }
 
   criarCitacao(): void {
-
     this.citacaoService.criarCitacao(this.citacao)
     this.router.navigate(['/listaCitacao']);
     this.limparCitacao();

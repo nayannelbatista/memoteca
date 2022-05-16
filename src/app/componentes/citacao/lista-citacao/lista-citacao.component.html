@@ -1,11 +1,20 @@
 <section class="container">
   <header class="header">
     <h2 class="ff-inter">Meu mural</h2>
+    <button (click)="criarCitacao()">Adicionar pensamento</button>
   </header>
-  <div class="modelo modelo1 ff-roboto-mono">
+  <div class="modelo modelo1 ff-roboto-mono" *ngIf="listaCitacaoMocada?.length > 0; else semCitacoes">
     <img src="/assets/imgs/aspasazul.png" alt="">
-    <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-    </p>
-    <p class="autor"><b>Lorem Ipsum</b></p>
+    <div *ngFor="let citacao of listaCitacaoMocada">
+      <div class="{{citacao.modelo}}">
+        <p class="conteudo">{{ citacao.conteudo }}</p>
+        <p class="autor"><b>{{ citacao.autoria }}</b></p>
+      </div>
+    </div>
   </div>
 </section>
+<ng-template #semCitacoes>
+  <p>Ainda não há citações por aqui!</p>
+</ng-template>
+
+
