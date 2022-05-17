@@ -8,6 +8,7 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import { CriarCitacaoComponent } from './componentes/citacao/criar-citacao/criar-citacao.component';
 import { ListaCitacaoComponent } from './componentes/citacao/lista-citacao/lista-citacao.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
+import { CitacaoComponent } from './componentes/citacao/citacao/citacao.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
     CabecalhoComponent,
     RodapeComponent,
     ListaCitacaoComponent,
-    CriarCitacaoComponent
+    CriarCitacaoComponent,
+    CitacaoComponent
   ],
   imports: [
     BrowserModule,
