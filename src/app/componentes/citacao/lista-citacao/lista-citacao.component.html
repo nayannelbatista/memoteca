@@ -5,12 +5,7 @@
   </header>
   <div class="mural" *ngIf="listaCitacaoMocada?.length > 0; else semCitacoes">
     <div *ngFor="let citacao of listaCitacaoMocada">
-      <div class="citacao {{citacao.modelo}} ff-roboto-mono">
-
-        <img src="/assets/imgs/aspasazul.png" alt="">
-        <p class="conteudo">{{ citacao.conteudo }}</p>
-        <p class="autor"><b>{{ citacao.autoria }}</b></p>
-      </div>
+      <app-citacao [citacao]="citacao"></app-citacao>
     </div>
   </div>
 </section>
