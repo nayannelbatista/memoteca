@@ -1,7 +1,6 @@
 import { CitacaoService } from './../../../servicos/citacao.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -25,10 +24,5 @@ export class ListaCitacaoComponent implements OnInit {
 
   criarCitacao(): void {
     this.router.navigate(['/criarCitacao']);
-  }
-
-  constructor() { }
-
-  ngOnInit(): void {
   }
 }

@@ -57,6 +57,7 @@
 
 .modelo .conteudo {
   margin: 1rem auto;
+  word-wrap: break-word;
 }
 
 .radio {
