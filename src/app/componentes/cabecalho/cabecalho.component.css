@@ -1,5 +1,6 @@
 .cabecalho {
   background: url(/assets/imgs/BannerBG.png);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-between;

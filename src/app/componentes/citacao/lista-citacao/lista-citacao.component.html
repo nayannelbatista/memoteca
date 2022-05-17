@@ -1,13 +1,13 @@
-
 <section class="container">
-  <header class="header">
+  <header class="header d-flex">
     <h2 class="ff-inter">Meu mural</h2>
-    <button (click)="criarCitacao()">Adicionar pensamento</button>
+    <button class="button" (click)="criarCitacao()">Adicionar pensamento</button>
   </header>
-  <div class="citacao modelo1 ff-roboto-mono" *ngIf="listaCitacaoMocada?.length > 0; else semCitacoes">
-    <img src="/assets/imgs/aspasazul.png" alt="">
+  <div class="mural" *ngIf="listaCitacaoMocada?.length > 0; else semCitacoes">
     <div *ngFor="let citacao of listaCitacaoMocada">
-      <div class="{{citacao.modelo}}">
+      <div class="citacao {{citacao.modelo}} ff-roboto-mono">
+
+        <img src="/assets/imgs/aspasazul.png" alt="">
         <p class="conteudo">{{ citacao.conteudo }}</p>
         <p class="autor"><b>{{ citacao.autoria }}</b></p>
       </div>
