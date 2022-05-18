@@ -1,6 +1,5 @@
 import { CitacaoService } from './../../../servicos/citacao.service';
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
 import { Citacao } from '../citacao';
 
 @Component({
@@ -14,16 +13,11 @@ export class ListaCitacaoComponent implements OnInit {
 
   constructor(
     private citacaoService: CitacaoService,
-    private router: Router
   ) { }
 
   ngOnInit(): void {
     this.citacaoService.mostrarListaCitacao().subscribe(listaCitacao => {
       this.listaCitacao = listaCitacao
     })
-  }
-
-  criarCitacao(): void {
-    this.router.navigate(['/criarCitacao']);
   }
 }

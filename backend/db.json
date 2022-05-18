@@ -1,0 +1,46 @@
+{
+  "citacoes": [
+    {
+      "id": 1,
+      "conteudo": "Aserehe ra de re De hebe tu de hebere seibiunouba mahabi An de bugui an de buididipi",
+      "autoria": "Rouge",
+      "modelo": "modelo1",
+      "data": "05-2022"
+    },
+    {
+      "id": 3,
+      "conteudo": "Aserehe ra de re De hebe tu de hebere seibiunouba mahabi An de bugui an de buididipi",
+      "autoria": "Rouge",
+      "modelo": "modelo3",
+      "data": "03-2022"
+    },
+    {
+      "conteudo": "As vezes no silêncio da noite eu fico pensando no bug",
+      "autoria": "Deva anônima",
+      "modelo": "modelo2",
+      "data": "2022-05-18T14:29:57.742Z",
+      "id": 6
+    },
+    {
+      "conteudo": "Tudo posso naquele que me fortalece",
+      "autoria": "Desconhecido",
+      "modelo": "modelo2",
+      "data": "2022-05-18T17:11:37.735Z",
+      "id": 10
+    },
+    {
+      "conteudo": "Batatinha quando nasce, espalha a rama pelo chão. ",
+      "autoria": "Anonimo",
+      "modelo": "modelo3",
+      "data": "2022-05-18T17:22:59.518Z",
+      "id": 11
+    },
+    {
+      "conteudo": "Batatinha quando nasce, espalha a rama pelo chão. ",
+      "autoria": "Anonimo",
+      "modelo": "modelo2",
+      "data": "2022-05-18T19:12:48.874Z",
+      "id": 12
+    }
+  ]
+}

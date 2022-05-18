@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
 import { CitacaoService } from 'src/app/servicos/citacao.service';
 
@@ -10,9 +11,17 @@ export class CitacaoComponent implements OnInit {
 
   @Input() citacao: any = []
 
-  constructor() { }
+  constructor(
+    private citacaoService: CitacaoService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
+  excluirCitacao(): void {
+    this.citacaoService.apagarCitacao(this.citacao.id).subscribe(() => {
+      this.router.navigate(['/criarCitacao']);
+    })
+  }
 }

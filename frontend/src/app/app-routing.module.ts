@@ -1,3 +1,4 @@
+import { CitacaoComponent } from './componentes/citacao/citacao/citacao.component';
 import { ListaCitacaoComponent } from './componentes/citacao/lista-citacao/lista-citacao.component';
 import { CriarCitacaoComponent } from './componentes/citacao/criar-citacao/criar-citacao.component';
 import { NgModule } from '@angular/core';

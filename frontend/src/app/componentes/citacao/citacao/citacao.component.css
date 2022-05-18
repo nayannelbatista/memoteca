@@ -1,3 +1,9 @@
+.botao-excluir {
+  border: none;
+  cursor: pointer;
+  margin-left: 14rem;
+}
+
 .citacao {
   background-color: #F8F9FE;
   padding: 1rem;
@@ -21,3 +27,5 @@
 .modelo3 {
   box-shadow: 8px 8px 0px #84EEC1;
 }
+
+
