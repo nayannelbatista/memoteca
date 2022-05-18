@@ -1,0 +1,14 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Meu mural</h2>
+    <button class="button" (click)="criarCitacao()">Adicionar pensamento</button>
+  </header>
+  <div class="mural" *ngIf="listaCitacao.length > 0; else semCitacoes">
+    <div *ngFor="let citacao of listaCitacao">
+      <app-citacao [citacao]="citacao"></app-citacao>
+    </div>
+  </div>
+</section>
+<ng-template #semCitacoes>
+  <p>Ainda não há citações por aqui!</p>
+</ng-template>

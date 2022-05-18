@@ -1,0 +1,108 @@
+<section class="container criar-citacoes ff-inter">
+  <header class="header">
+    <h2>Adicione um<br> pensamento novo:</h2>
+  </header>
+  <form (ngSubmit)="criarCitacao()">
+    <label for="citacao">Pensamento:</label>
+    <input
+      type="textarea"
+      name="citacao"
+      id="citacao"
+      class="input"
+      placeholder="Digite o pensamento"
+      [(ngModel)]="citacao.conteudo"
+    >
+    <label for="autoria">Autoria ou fonte:</label>
+    <input
+      type="text"
+      name="autoria"
+      id="autoria"
+      class="input"
+      placeholder="Insira a autoria ou fonte"
+      [(ngModel)]="citacao.autoria"
+    >
+
+    <label for="modelo">Selecione o modelo do card:</label>
+    <div class="container-radio">
+      <div class="radio-modelo">
+        <label class="modelo-teste" for="modelo1">
+          <input
+            type="radio"
+            name="modelo-teste"
+            id="modelo1"
+            value="modelo1"
+            [(ngModel)]="citacao.modelo"
+          >
+
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 1</span>
+        </label>
+        Prévia:
+        <div class="modelo modelo1 ff-roboto-mono">
+          <img src="/assets/imgs/aspasazul.png" alt="">
+
+          <p class="conteudo">{{ citacao.conteudo }}</p>
+          <p class="autor"><b>{{ citacao.autoria }}</b></p>
+
+        </div>
+      </div>
+      <div class="radio-modelo">
+        <label class="modelo-teste" for="modelo2">
+
+          <input
+            type="radio"
+            name="modelo-teste"
+            id="modelo2"
+            value="modelo2"
+            [(ngModel)]="citacao.modelo"
+          >
+
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 2</span>
+        </label>
+        Prévia:
+        <div class="modelo modelo2 ff-roboto-mono">
+          <img src="/assets/imgs/aspasazulclaro.png" alt="">
+
+          <p class="conteudo">{{ citacao.conteudo }}</p>
+          <p class="autor"><b>{{ citacao.autoria }}</b></p>
+
+        </div>
+      </div>
+      <div class="radio-modelo">
+        <label class="modelo-teste" for="modelo3">
+
+          <input
+            type="radio"
+            name="modelo-teste"
+            id="modelo3"
+            value="modelo3"
+            [(ngModel)]="citacao.modelo"
+          >
+
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 3</span>
+        </label>
+        Prévia:
+        <div class="modelo modelo3 ff-roboto-mono">
+          <img src="/assets/imgs/aspasverde.png" alt="">
+
+          <p class="conteudo">{{ citacao.conteudo }}</p>
+          <p class="autor"><b>{{ citacao.autoria }}</b></p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <button class="button">Criar pensamento</button>
+  </form>
+</section>
+
+
