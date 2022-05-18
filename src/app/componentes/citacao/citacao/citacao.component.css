@@ -1,7 +1,9 @@
 .citacao {
   background-color: #F8F9FE;
   padding: 1rem;
-  max-width: 250px;
+  max-width: 500px;
+  min-width: 250px;
+  width: min-content;
   margin: 1rem 0 2rem;
 }
 
