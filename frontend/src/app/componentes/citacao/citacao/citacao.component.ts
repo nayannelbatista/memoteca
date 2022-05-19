@@ -24,4 +24,11 @@ export class CitacaoComponent implements OnInit {
       this.router.navigate(['/criarCitacao']);
     })
   }
+
+  larguraCitacao(){
+    if(this.citacao.conteudo.length >= 256){
+      return 'citacao-g'
+    }
+    return 'citacao-p';
+  }
 }

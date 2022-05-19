@@ -1,19 +1,22 @@
 .botao-excluir {
   border: none;
   cursor: pointer;
-  margin-left: 14rem;
+  margin-left: 12rem;
 }
 
 .citacao {
   background-color: #F8F9FE;
   padding: 1rem;
-  max-width: 250px;
-  margin: 1rem 0 2rem;
+  box-sizing: border-box;
 }
 
 .citacao .conteudo {
   margin: 1rem auto;
-  word-wrap: break-word;
+  word-wrap: break-all;
+}
+
+.citacao .autor {
+  word-wrap: break-all;
 }
 
 .modelo1 {
@@ -26,6 +29,24 @@
 
 .modelo3 {
   box-shadow: 8px 8px 0px #84EEC1;
+}
+
+.citacao-g {
+  width: 556px;
+}
+.citacao-p {
+  width: 262px;
+}
+
+@media screen and (max-width: 768px) {
+  .citacao-g {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .citacao-p {
+    width: 100%;
+  }
 }
 
 

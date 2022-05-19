@@ -57,7 +57,11 @@
 
 .modelo .conteudo {
   margin: 1rem auto;
-  word-wrap: break-word;
+  word-wrap: break-all;
+}
+
+.modelo .autor {
+  word-wrap: break-all;
 }
 
 .radio {
