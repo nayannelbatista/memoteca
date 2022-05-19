@@ -8,11 +8,19 @@ import { CitacaoService } from 'src/app/servicos/citacao.service';
 })
 export class CitacaoComponent implements OnInit {
 
-  @Input() citacao: any = []
+  @Input() citacao: any = [];
+
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  larguraCitacao(){
+    if(this.citacao.conteudo.length >= 256){
+      return 'citacao-g'
+    }
+    return 'citacao-p';
   }
 
 }
