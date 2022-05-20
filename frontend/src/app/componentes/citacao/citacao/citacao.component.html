@@ -2,9 +2,13 @@
   <img src="/assets/imgs/{{citacao.modelo}}.png" alt="">
   <p class="conteudo">{{ citacao.conteudo }}</p>
   <p class="autor"><b>{{ citacao.autoria }}</b></p>
-  <div>
-    <button class="botao-excluir" (click)="excluirCitacao()">
+  <div class="acoes">
+    <button class="botao-editar" routerLink="/citacoes/alterarCitacao/{{citacao.id}}">
+      <img src="/assets/imagens/editar.png" alt="">
+    </button>
+    <button class="botao-excluir" routerLink="citacoes/excluirCitacao/{{citacao.id}}">
       <img src="/assets/imagens/excluir.png" alt="">
     </button>
   </div>
 </div>
+

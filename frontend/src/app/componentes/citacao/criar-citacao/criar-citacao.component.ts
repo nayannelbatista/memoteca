@@ -1,4 +1,4 @@
-import { CitacaoService } from '../../../servicos/citacao.service';
+import { CitacaoService } from '../citacao.service';
 import { Component, OnInit } from '@angular/core';
 import { Citacao } from '../citacao';
 import { Router } from '@angular/router';
@@ -10,12 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CriarCitacaoComponent implements OnInit {
 
-  citacao: Citacao = {
-    conteudo: '',
-    autoria: '',
-    modelo: '',
-    data: new Date
-  }
+  citacao!: Citacao;
 
   constructor(
     private citacaoService: CitacaoService,
@@ -27,18 +22,19 @@ export class CriarCitacaoComponent implements OnInit {
 
   criarCitacao(): void {
     this.citacaoService.criarCitacao(this.citacao).subscribe(() => {
-      this.router.navigate(['/listaCitacao']);
+      this.router.navigate(['/listarCitacao']);
       this.limparCitacao();
     })
   }
 
   limparCitacao(): void {
-    this.citacao = {
-      conteudo: '',
-      autoria: '',
-      modelo: '',
-      data: new Date
-    }
+    // this.citacao = {
+    //   id: '',
+    //   conteudo: '',
+    //   autoria: '',
+    //   modelo: '',
+    //   data: new Date
+    // }
   }
 
 }

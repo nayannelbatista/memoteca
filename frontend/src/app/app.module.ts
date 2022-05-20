@@ -7,18 +7,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { CriarCitacaoComponent } from './componentes/citacao/criar-citacao/criar-citacao.component';
-import { ListaCitacaoComponent } from './componentes/citacao/lista-citacao/lista-citacao.component';
+import { ListarCitacaoComponent } from './componentes/citacao/listar-citacao/listar-citacao.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CitacaoComponent } from './componentes/citacao/citacao/citacao.component';
+
+import { ExcluirCitacaoComponent } from './componentes/citacao/excluir-citacao/excluir-citacao.component';
+import { AlterarCitacaoComponent } from './componentes/citacao/alterar-citacao/alterar-citacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     RodapeComponent,
-    ListaCitacaoComponent,
+    ListarCitacaoComponent,
     CriarCitacaoComponent,
-    CitacaoComponent
+    CitacaoComponent,
+    AlterarCitacaoComponent,
+    ExcluirCitacaoComponent
   ],
   imports: [
     BrowserModule,

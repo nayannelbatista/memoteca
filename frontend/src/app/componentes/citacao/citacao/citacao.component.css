@@ -1,7 +1,17 @@
+.acoes {
+  display: flex;
+  justify-content: flex-end
+}
+
 .botao-excluir {
   border: none;
   cursor: pointer;
-  margin-left: 12rem;
+  margin-left: 5px;
+}
+
+.botao-editar {
+  border: none;
+  cursor: pointer;
 }
 
 .citacao {
