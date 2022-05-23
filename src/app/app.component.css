@@ -1,5 +1,6 @@
 main {
   background: url(../../src/assets/imgs/Backgroundcompleto.png);
   background-size: cover;
+  min-height: 60vh;
 }
 

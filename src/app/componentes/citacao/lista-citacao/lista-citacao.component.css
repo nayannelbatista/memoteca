@@ -11,3 +11,8 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+.sem-citacao {
+  text-align: center;
+  padding: 2rem 0 5rem;
+}

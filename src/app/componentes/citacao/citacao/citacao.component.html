@@ -1,4 +1,4 @@
-<div class="citacao {{citacao.modelo}} ff-roboto-mono" [ngClass]="larguraCitacao()">
+<div class="citacao {{citacao.modelo}} ff-roboto-mono" [ngClass]="{'citacao-g': citacaoGrande, 'citacao-p': !citacaoGrande}">
   <img src="/assets/imgs/{{citacao.modelo}}.png" alt="">
   <p class="conteudo">{{ citacao.conteudo }}</p>
   <p class="autor"><b>{{ citacao.autoria }}</b></p>

@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CitacaoService {
-  listaCitacaoMocada = MOCK_LISTA_CITACAO;
+  listaCitacaoMocada: any[] = MOCK_LISTA_CITACAO;
 
   criarCitacao(citacao: Citacao) {
     this.listaCitacaoMocada.push(citacao);
