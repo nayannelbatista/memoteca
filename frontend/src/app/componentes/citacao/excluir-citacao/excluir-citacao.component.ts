@@ -10,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExcluirCitacaoComponent implements OnInit {
 
-  citacao!: Citacao;
+  citacao: Citacao = {
+    id: '',
+    conteudo: '',
+    autoria: '',
+    modelo: '',
+  };
 
   constructor(
     private citacaoService: CitacaoService,
@@ -21,13 +26,22 @@ export class ExcluirCitacaoComponent implements OnInit {
   ngOnInit(): void {
     const id = +this.route.snapshot.paramMap.get('id')!;
     this.citacaoService.mostrarCitacaoPorId(id).subscribe(citacao => {
-      this.citacao = citacao
+      this.citacao = citacao;
     });
   }
 
-  deleteBook(): void {
-    this.citacaoService.apagarCitacao(this.citacao.id!).subscribe(() => {
-    this.router.navigate(['/listaCitacao']);
+  mostrarModal() {
+    
+  }
+
+  excluirCitacao(): void {
+    this.citacaoService.apagarCitacao(this.citacao.id).subscribe(() => {
+      this.router.navigate(['/listarCitacao']);
     });
+  }
+
+  cancelar(): void {
+    alert("Operação cancelada")
+    this.router.navigate(['/listarCitacao']);
   }
 }

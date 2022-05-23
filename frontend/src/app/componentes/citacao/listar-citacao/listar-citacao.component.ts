@@ -11,13 +11,11 @@ export class ListarCitacaoComponent implements OnInit {
 
   listaCitacao: Citacao[] = [];
 
-  constructor(
-    private citacaoService: CitacaoService,
-  ) { }
+  constructor(private citacaoService: CitacaoService) { }
 
   ngOnInit(): void {
     this.citacaoService.listarCitacao().subscribe(listaCitacao => {
-      this.listaCitacao = listaCitacao
+      this.listaCitacao = listaCitacao;
     })
   }
 }

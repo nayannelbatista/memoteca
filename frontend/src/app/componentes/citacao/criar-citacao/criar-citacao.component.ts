@@ -10,7 +10,14 @@ import { Router } from '@angular/router';
 })
 export class CriarCitacaoComponent implements OnInit {
 
-  citacao!: Citacao;
+  //citacao!: Citacao;
+
+  citacao: Citacao = {
+    id: '',
+    conteudo: '',
+    autoria: '',
+    modelo: 'modelo1'
+  }
 
   constructor(
     private citacaoService: CitacaoService,
@@ -23,7 +30,7 @@ export class CriarCitacaoComponent implements OnInit {
   criarCitacao(): void {
     this.citacaoService.criarCitacao(this.citacao).subscribe(() => {
       this.router.navigate(['/listarCitacao']);
-      this.limparCitacao();
+      //this.limparCitacao();
     })
   }
 
@@ -32,8 +39,7 @@ export class CriarCitacaoComponent implements OnInit {
     //   id: '',
     //   conteudo: '',
     //   autoria: '',
-    //   modelo: '',
-    //   data: new Date
+    //   modelo: ''
     // }
   }
 

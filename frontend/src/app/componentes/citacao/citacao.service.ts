@@ -34,6 +34,7 @@ export class CitacaoService {
 
   apagarCitacao(id: string): Observable<Citacao> {
     const url = `${this.baseUrl}/${id}`;
+    console.log('url', url)
     return this.http.delete<Citacao>(url);
   }
 
