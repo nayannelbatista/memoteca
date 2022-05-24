@@ -12,6 +12,7 @@
 .botao-editar {
   border: none;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .citacao {
