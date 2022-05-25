@@ -1,8 +1,8 @@
-<section class="container criar-citacoes ff-inter">
+<section class="container editar-citacoes ff-inter">
   <header class="header">
     <h2>Adicione um<br>pensamento novo:</h2>
   </header>
-  <form (ngSubmit)="criarCitacao()">
+  <form>
     <label for="citacao">Pensamento:</label>
     <input
       type="textarea"
@@ -101,8 +101,12 @@
 
     </div>
 
-    <button class="button">Criar pensamento</button>
+    <div class="acoes">
+      <button class="button button-editar" (click)="editarCitacao()">Editar</button>
+      <button class="button button-cancelar" (click)="cancelar()">Cancelar</button>
+    </div>
   </form>
 </section>
+
 
 

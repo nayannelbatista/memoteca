@@ -14,7 +14,7 @@ export class ListarCitacaoComponent implements OnInit {
   constructor(private citacaoService: CitacaoService) { }
 
   ngOnInit(): void {
-    this.citacaoService.listarCitacao().subscribe(listaCitacao => {
+    this.citacaoService.listar().subscribe(listaCitacao => {
       this.listaCitacao = listaCitacao;
     })
   }

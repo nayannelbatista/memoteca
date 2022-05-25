@@ -1,16 +1,21 @@
-import { Citacao } from './../citacao';
+import { Citacao } from '../citacao';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CitacaoService } from '../citacao.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-alterar-citacao',
-  templateUrl: './alterar-citacao.component.html',
-  styleUrls: ['./alterar-citacao.component.css']
+  selector: 'app-editar-citacao',
+  templateUrl: './editar-citacao.component.html',
+  styleUrls: ['./editar-citacao.component.css']
 })
-export class AlterarCitacaoComponent implements OnInit {
+export class EditarCitacaoComponent implements OnInit {
 
-  citacao!: Citacao;
+  citacao: Citacao = {
+    id: 0,
+    conteudo: '',
+    autoria: '',
+    modelo: 'modelo1'
+  }
 
   constructor(
     private citacaoService: CitacaoService,
@@ -19,21 +24,19 @@ export class AlterarCitacaoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const id = +this.route.snapshot.paramMap.get('id')!;
-    console.log("id: " + id);
-    this.citacaoService.mostrarCitacaoPorId(id).subscribe(citacao => {
+    const id = parseInt(this.route.snapshot.paramMap.get('id')!);
+    this.citacaoService.buscarPorId(id).subscribe(citacao => {
       this.citacao = citacao
     });
   }
 
   editarCitacao(): void {
-    this.citacaoService.alterarCitacao(this.citacao).subscribe(() => {
+    this.citacaoService.editar(this.citacao).subscribe(() => {
       this.router.navigate(['/listarCitacao'])
     })
   }
 
   cancelar(): void {
-    alert("Operação cancelada")
     this.router.navigate(['/listarCitacao']);
   }
 }

@@ -1,8 +1,19 @@
-.criar-citacoes {
+.acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.button {
+  margin: 5px;
+}
+
+.editar-citacoes {
   padding: 2rem 0;
 }
 
-.criar-citacoes form {
+.editar-citacoes form {
   background: #C4EDFF;
 
   border: none;
@@ -14,13 +25,13 @@
   padding: 2rem;
 }
 
-.criar-citacoes form label {
+.editar-citacoes form label {
   color: #154580;
   font-weight: bold;
   margin: 0 0 1rem;
 }
 
-.criar-citacoes form .input {
+.editar-citacoes form .input {
   border: none;
   height: 40px;
   padding: 1rem 2rem;
@@ -29,7 +40,7 @@
 }
 
 
-.criar-citacoes form .textarea {
+.editar-citacoes form .textarea {
   border: none;
   padding: 1rem 2rem;
   border-radius: 20px;

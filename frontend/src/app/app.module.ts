@@ -6,13 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
-import { CriarCitacaoComponent } from './componentes/citacao/criar-citacao/criar-citacao.component';
+import { SalvarCitacaoComponent } from './componentes/citacao/salvar-citacao/salvar-citacao.component';
 import { ListarCitacaoComponent } from './componentes/citacao/listar-citacao/listar-citacao.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CitacaoComponent } from './componentes/citacao/citacao/citacao.component';
 
 import { ExcluirCitacaoComponent } from './componentes/citacao/excluir-citacao/excluir-citacao.component';
-import { AlterarCitacaoComponent } from './componentes/citacao/alterar-citacao/alterar-citacao.component';
+import { EditarCitacaoComponent } from './componentes/citacao/editar-citacao/editar-citacao.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +20,9 @@ import { AlterarCitacaoComponent } from './componentes/citacao/alterar-citacao/a
     CabecalhoComponent,
     RodapeComponent,
     ListarCitacaoComponent,
-    CriarCitacaoComponent,
+    SalvarCitacaoComponent,
     CitacaoComponent,
-    AlterarCitacaoComponent,
+    EditarCitacaoComponent,
     ExcluirCitacaoComponent
   ],
   imports: [

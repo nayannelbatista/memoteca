@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExcluirCitacaoComponent implements OnInit {
 
   citacao: Citacao = {
-    id: '',
+    id: 0,
     conteudo: '',
     autoria: '',
     modelo: '',
@@ -25,23 +25,18 @@ export class ExcluirCitacaoComponent implements OnInit {
 
   ngOnInit(): void {
     const id = +this.route.snapshot.paramMap.get('id')!;
-    this.citacaoService.mostrarCitacaoPorId(id).subscribe(citacao => {
+    this.citacaoService.buscarPorId(id).subscribe(citacao => {
       this.citacao = citacao;
     });
   }
 
-  mostrarModal() {
-    
-  }
-
   excluirCitacao(): void {
-    this.citacaoService.apagarCitacao(this.citacao.id).subscribe(() => {
+    this.citacaoService.excluir(this.citacao.id).subscribe(() => {
       this.router.navigate(['/listarCitacao']);
     });
   }
 
   cancelar(): void {
-    alert("Operação cancelada")
     this.router.navigate(['/listarCitacao']);
   }
 }

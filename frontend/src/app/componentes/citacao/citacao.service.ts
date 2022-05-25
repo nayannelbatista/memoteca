@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { catchError, EMPTY, map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Citacao } from './citacao';
 
 @Injectable({
@@ -13,33 +13,27 @@ export class CitacaoService {
 
   constructor(private http: HttpClient) { }
 
-  criarCitacao(citacao: Citacao): Observable<Citacao> {
+  salvar(citacao: Citacao): Observable<Citacao> {
     return this.http.post<Citacao>(this.baseUrl, citacao);
   }
 
-  listarCitacao(): Observable<Citacao[]> {
+  listar(): Observable<Citacao[]> {
     return this.http.get<Citacao[]>(this.baseUrl);
   }
 
-  mostrarCitacaoPorId(id: number): Observable<Citacao> {
+  buscarPorId(id: number): Observable<Citacao> {
     const url = `${this.baseUrl}/${id}`;
     return this.http.get<Citacao>(url);
   }
 
-  alterarCitacao(citacao: Citacao): Observable<Citacao> {
-    console.log(citacao);
+  editar(citacao: Citacao): Observable<Citacao> {
     const url = `${this.baseUrl}/${citacao.id}`;
     return this.http.put<Citacao>(url, citacao);
   }
 
-  apagarCitacao(id: string): Observable<Citacao> {
+  excluir(id: number): Observable<Citacao> {
     const url = `${this.baseUrl}/${id}`;
-    console.log('url', url)
     return this.http.delete<Citacao>(url);
-  }
-
-  mostrarMensagem(msg: string) {
-    alert(msg)
   }
 }
 
