@@ -24,7 +24,7 @@ export class ExcluirCitacaoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const id = +this.route.snapshot.paramMap.get('id')!;
+    const id = parseInt(this.route.snapshot.paramMap.get('id')!);
     this.citacaoService.buscarPorId(id).subscribe(citacao => {
       this.citacao = citacao;
     });
