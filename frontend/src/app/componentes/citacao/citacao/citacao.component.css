@@ -25,11 +25,11 @@
 
 .citacao .conteudo {
   margin: 1rem auto;
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 
 .citacao .autor {
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 
 .modelo1 {
