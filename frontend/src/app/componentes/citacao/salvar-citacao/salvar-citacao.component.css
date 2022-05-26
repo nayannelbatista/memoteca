@@ -70,11 +70,11 @@
 
 .modelo .conteudo {
   margin: 1rem auto;
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 
 .modelo .autor {
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 
 .radio {

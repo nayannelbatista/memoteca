@@ -2,7 +2,7 @@
   "citacoes": [
     {
       "id": 1,
-      "conteudo": "Aserehe ra de re De hebe tu de hebere seibiunouba mahabi An de bugui an de buididipi",
+      "conteudo": "Aserehe ra de re De hebe tu de hebere seibiunouba mahabi An de bugui an de buididipi Store é um gerenciamento de estado global com tecnologia RxJS para aplicativos Angular, inspirado no Redux. Store é um contêiner de estado controlado projetado para ajudar a escrever aplicativos consistentes e de alto desempenho em Angular. Seletores são funções puras usadas para selecionar, derivar e compor pedaços de estado. O estado é acessado com o Store, um observável de estado e um observador de ações.",
       "autoria": "Rouge",
       "modelo": "modelo1"
     },
@@ -23,6 +23,12 @@
       "autoria": "Anonimo",
       "modelo": "modelo2",
       "id": 12
+    },
+    {
+      "id": 13,
+      "conteudo": "Só tô aqui pq minha mãe ainda paga aluguel",
+      "autoria": "Froid",
+      "modelo": "modelo3"
     }
   ]
 }

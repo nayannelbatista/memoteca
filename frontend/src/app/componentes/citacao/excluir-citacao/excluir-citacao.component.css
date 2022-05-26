@@ -1,7 +1,6 @@
 .modal {
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #333;
+  box-shadow: 7px 8px 0px 0px #154580;
   min-width: 360px;
   min-height: 150px;
   position: fixed;
@@ -41,5 +40,14 @@
 
 .excluir-citacoes {
   padding: 10rem 0;
+}
+
+@media screen and (max-width: 548px) {
+  .modal {
+    width: 90%;
+    min-width: 90%;
+    padding: 50px 12px 24px;
+    font-size: 1.2rem;
+  }
 }
 
