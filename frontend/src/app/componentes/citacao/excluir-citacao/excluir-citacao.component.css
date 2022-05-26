@@ -42,3 +42,12 @@
   padding: 55rem 0;
 }
 
+@media screen and (max-width: 548px) {
+  .modal {
+    width: 90%;
+    min-width: 90%;
+    padding: 50px 12px 24px;
+    font-size: 1.2rem;
+  }
+}
+
